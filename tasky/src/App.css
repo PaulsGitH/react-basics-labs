@@ -18,7 +18,7 @@ div {
   padding: 20px;
 }
 
-.container {
+.container{
   text-align: center;
 }
 
@@ -38,17 +38,12 @@ div {
 
 .title {
   font-weight: bold;
-  font-size: 1.2em; 
+  font-size: 1.2em;
 }
 
 .description {
   font-style: italic;
   opacity: 0.9;
-}
-
-.priority {
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 button {
@@ -85,6 +80,18 @@ input[type=text], input[type=date] {
   box-sizing: border-box;
 }
 
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+}
+
 input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
@@ -104,4 +111,13 @@ form {
   text-align: left;
   width: 50%;
   margin: auto;
+}
+
+.priorityBadge {
+  display: inline-block;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 10px;
 }
