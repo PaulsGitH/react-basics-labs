@@ -46,3 +46,9 @@ div {
   opacity: 0.9;
 }
 
+.priority {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
