@@ -17,9 +17,13 @@ function App() {
     const tasks = [...taskState.tasks];
     tasks[taskIndex].done = !tasks[taskIndex].done;
     setTaskState({ tasks });
-    // console.log(`${taskIndex} ${tasks[taskIndex].done}`); // optional
   };
 
+  const deleteHandler = (taskIndex) => {
+    const tasks = [...taskState.tasks];
+    tasks.splice(taskIndex, 1);
+    setTaskState({ tasks });
+  };
 
 
 
@@ -32,11 +36,13 @@ function App() {
           title={task.title}
           description={task.description}
           deadline={task.deadline}
-          priority={task.priority}     // retained if you have it
+          priority={task.priority}   // kept from exercises
           done={task.done}
           markDone={() => doneHandler(index)}
+          deleteTask={() => deleteHandler(index)}   // ADD THIS
         />
       ))}
+
     </div>
   );
 }
